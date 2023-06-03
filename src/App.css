@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+@import url('https://fonts.cdnfonts.com/css/american-typewriter');
+@import url('https://fonts.cdnfonts.com/css/hanken-grotesk');
+
+body {
+  padding: 0;
+  margin: 0;
+  /* background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95));*/
+  background: #3C1361;
+  font-family: "American Typewriter", "AmericanTypewriter";
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 12px;
+  color: #bca0dc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name {
+  font-size: 24px;
+  color: #bca0dc;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.years {
+  font-size: 21px;
+  color: #bca0dc;
+
+}
+
+.year {
+  font-size: 35px;
+  color: #bca0dc;
+  border: 1px solid #bca0dc;
+  border-radius: 50px;
+  width: max-content;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.list-text {
+  font-size: 12px;
+  color: #bca0dc;
+  opacity: 34%;
+}
+
+.border {
+  border-radius: 30%;
+  width: 100%;
+}
+
+.title {
+
+  font-size: 45px;
+  color: #bca0dc;
+  font-family: "American Typewriter", "AmericanTypewriter";
+
+}
+
+.descriptionText {
+  font-size: 14px;
+  color: #bca0dc;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.backBtn {
+  color: #bca0dc;
+  opacity: 22%;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 25px;
+}
+
+.area {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ccc;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+}
+
+.area:hover {
+  background-color: #eaeaea;
+}
+
+.details-container {
+  min-height: 100vh; /* Cambia height a min-height */
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.item {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Agrega un margen inferior */
+}
+
+.audio-player {
+/* Ajusta el alto según tus necesidades */
+  position: relative;
+}
+
+#audio {
+  display: none; /* Oculta el reproductor de audio nativo */
+}
+
+.custom-controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-controls button {
+  padding: 10px 20px;
+  background-color: #bca0dc;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-controls button:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
