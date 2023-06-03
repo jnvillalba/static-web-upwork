@@ -1,12 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import AudioPlayer from "./AudioPlayer";
 
 function Details({ item, artist, data }) {
   const navigate = useNavigate();
   const goToHome = () => navigate("/");
 
   return (
-    <div className="section">
+    <div className="section"><div className="section-content">
       <button className="btn backBtn" onClick={goToHome}>
         {"<<"}
       </button>
@@ -35,11 +36,10 @@ function Details({ item, artist, data }) {
             </li>
           ))}
       </ul>
+      </div>
       <div className="audioPlayer">
         {item.MediaIURL && (
-          <audio controls>
-            <source src={item.MediaIURL} type="audio/mpeg" />
-          </audio>
+          <AudioPlayer url={item.MediaIURL} />  
         )}
       </div>
 

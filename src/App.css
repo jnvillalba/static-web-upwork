@@ -134,6 +134,7 @@ h1 {
 .fp-watermark{
   display: none;
 }
-.section{
-  padding: 5px;
+.section-content{
+  padding-left: 8px;
+  padding-right: 8px;
 }
