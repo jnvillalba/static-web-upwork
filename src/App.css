@@ -131,3 +131,9 @@ h1 {
   outline: none;
 }
 
+.fp-watermark{
+  display: none;
+}
+.section{
+  padding: 5px;
+}

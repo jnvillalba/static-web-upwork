@@ -10,7 +10,7 @@ const FullpageWrapper = ({ data, artist }) => (
       return (
         <ReactFullpage.Wrapper>
           {data.map((item, i) => (
-            <Details item={item} artist={artist} key={i} />
+            <Details item={item} artist={artist} key={i} data={data} />
           ))}
         </ReactFullpage.Wrapper>
       );
