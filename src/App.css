@@ -25,7 +25,7 @@ h1 {
 .years {
   font-size: 21px;
   color: #bca0dc;
-
+  margin-bottom: 30px;
 }
 
 .year {
@@ -36,8 +36,9 @@ h1 {
   width: max-content;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .list-text {
@@ -72,6 +73,24 @@ h1 {
   font-size: 25px;
 }
 
+.backBtn {
+  width: 40px;
+  height: 40px;
+  color: #bca0dc;
+  opacity: 22%;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 25px;
+  cursor: pointer;
+  outline: none;
+  /* Estilos para dar forma de "<<", puedes ajustarlos según tus preferencias */
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 30px;
+}
+
+
+
 .area {
   height: 100%;
   width: 100%;
@@ -87,7 +106,8 @@ h1 {
 }
 
 .details-container {
-  min-height: 100vh; /* Cambia height a min-height */
+  min-height: 100vh;
+  /* Cambia height a min-height */
   width: 100%;
   overflow-y: scroll;
   position: relative;
@@ -98,43 +118,35 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px; /* Agrega un margen inferior */
+  margin-bottom: 20px;
+  /* Agrega un margen inferior */
 }
 
 .audio-player {
-/* Ajusta el alto según tus necesidades */
-  position: relative;
+  /* Ajusta el alto según tus necesidades */
+  position: absolute !important;
+  bottom: 0 !important;
 }
 
 #audio {
-  display: none; /* Oculta el reproductor de audio nativo */
+  display: none;
+  /* Oculta el reproductor de audio nativo */
 }
 
-.custom-controls {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-.custom-controls button {
-  padding: 10px 20px;
-  background-color: #bca0dc;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.custom-controls button:focus {
-  outline: none;
-}
-
-.fp-watermark{
+.fp-watermark {
   display: none;
 }
-.section-content{
-  padding-left: 8px;
-  padding-right: 8px;
+
+.section-content {
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+.fp-overflow {
+  height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
 }

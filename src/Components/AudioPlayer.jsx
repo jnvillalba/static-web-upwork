@@ -24,6 +24,7 @@ const AudioPlayer = ({ url }) => {
         alignItems: 'center',
         justifyContent: 'center',
         cursor: 'pointer',
+
       }}
       onClick={toggleAudio}
     >
@@ -36,7 +37,7 @@ const AudioPlayer = ({ url }) => {
             alignItems: 'center',
             justifyContent: 'center',
             borderRadius: '50%',
-            border: '2px solid #fffff',
+            border: '2px solid #ffffff',
             opacity: 0.5,
           }}
         >
@@ -57,7 +58,7 @@ const AudioPlayer = ({ url }) => {
             alignItems: 'center',
             justifyContent: 'center',
             borderRadius: '50%',
-            border: '2px solid #fffff',
+            border: '2px solid #ffffff',
             opacity: 0.5,
           }}
         >

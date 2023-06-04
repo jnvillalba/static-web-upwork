@@ -8,8 +8,7 @@ function Details({ item, artist, data }) {
 
   return (
     <div className="section"><div className="section-content">
-      <button className="btn backBtn" onClick={goToHome}>
-        {"<<"}
+      <button className="btn backBtn" onClick={goToHome}>&lt;&lt;
       </button>
       <h1 className="name">{artist.Name}</h1>
       <h1 className="years">{artist.Years}</h1>
