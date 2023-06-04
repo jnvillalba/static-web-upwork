@@ -41,11 +41,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-.list-text {
-  font-size: 12px;
-  color: #bca0dc;
-  opacity: 34%;
-}
 
 .border {
   border-radius: 30%;
@@ -149,4 +144,23 @@ h1 {
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
+}
+ul{
+  margin-left: 0px;
+  padding-left: 0px;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  list-style: none;
+}
+
+.list-text {
+  font-size: 15px;
+  color: #bca0dc;
+  opacity: 34%;
+  
+}
+.list-text::before {
+  content: "•"; /* Unicode character for bullet point */
+  font-size: 2em; /* Adjust the size as per your preference */
+
 }
