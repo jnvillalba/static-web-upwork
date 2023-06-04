@@ -89,16 +89,13 @@ h1 {
 .area {
   height: 100%;
   width: 100%;
-  border: 1px solid #ccc;
+
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 
-.area:hover {
-  background-color: #eaeaea;
-}
 
 .details-container {
   min-height: 100vh;
@@ -145,7 +142,8 @@ h1 {
   flex-direction: column !important;
   justify-content: space-between !important;
 }
-ul{
+
+ul {
   margin-left: 0px;
   padding-left: 0px;
   flex-direction: column !important;
@@ -157,10 +155,13 @@ ul{
   font-size: 15px;
   color: #bca0dc;
   opacity: 34%;
-  
+
 }
+
 .list-text::before {
-  content: "•"; /* Unicode character for bullet point */
-  font-size: 2em; /* Adjust the size as per your preference */
+  content: "•";
+  /* Unicode character for bullet point */
+  font-size: 2em;
+  /* Adjust the size as per your preference */
 
 }

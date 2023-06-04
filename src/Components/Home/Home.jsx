@@ -20,10 +20,10 @@ const Home = () => {
   return (
     <div style={containerStyle}>
       <div className="area" onClick={goTo1}>
-        Área 1
+        
       </div>
       <div className="area" onClick={goTo2}>
-        Área 2
+        
       </div>
     </div>
   );
