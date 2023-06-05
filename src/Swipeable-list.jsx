@@ -25,54 +25,41 @@ const SwipeableList = ({ item, artist, data }) => {
 
   const renderTitles = () => {
     const renderedTitles = [];
-    const previousTitles = [];
-    const currentTitles = [];
-    const nextTitles = [];
     let audioPlayer = null;
 
-    for (let i = currentIndex - 1; i <= currentIndex + 1; i++) {
-      if (i >= 0 && i < area1.length) {
-        let titleClasses = "title";
-        let yearClasses = "year";
+    for (let i = 0; i < area1.length; i++) {
+      let titleClasses = "title";
+      let yearClasses = "year";
 
-        if (i === currentIndex - 1) {
-          titleClasses = "list-text";
-          previousTitles.push(
-            <h2 className={titleClasses} key={i}>{area1[i].TitleText}</h2>
-          );
-        } else if (i === currentIndex) {
-          yearClasses += " show";
-          audioPlayer = <AudioPlayer url={area1[i].MediaIURL} />;
-          currentTitles.push(
-            <div key={i}>
-              <h2 className={yearClasses}>{area1[i].Year}</h2>
-              <h2 className={titleClasses}>{area1[i].TitleText}</h2>
-              <p className="descriptionText">{area1[i].DescriptionText}</p>
-            </div>
-          );
-        } else if (i === currentIndex + 1) {
-          titleClasses = "list-text";
-          nextTitles.push(
-            <h2 className={titleClasses} key={i}>{area1[i].TitleText}</h2>
-          );
-        }
+      if (i < currentIndex) {
+        titleClasses = "list-text";
+        renderedTitles.push(
+          <h2 className={titleClasses} key={i}>{area1[i].TitleText}</h2>
+        );
+      } else if (i === currentIndex) {
+        yearClasses += " show";
+        audioPlayer = area1[i].MediaIURL ? <AudioPlayer url={area1[i].MediaIURL} /> : null;
+        renderedTitles.push(
+          <div key={i}>
+            <h2 className={yearClasses}>{area1[i].Year}</h2>
+            <h2 className={titleClasses}>{area1[i].TitleText}</h2>
+            <p className="descriptionText">{area1[i].DescriptionText}</p>
+          </div>
+        );
+      } else if (i > currentIndex) {
+        titleClasses = "list-text";
+        renderedTitles.push(
+          <h2 className={titleClasses} key={i}>{area1[i].TitleText}</h2>
+        );
       }
     }
 
-    renderedTitles.push(
-      <div className="container" key="previous">
-        {previousTitles}
-      </div>
-    );
-    renderedTitles.push(
-      <div className="container" key="current">
-        {currentTitles}
-        {nextTitles}
+    return (
+      <div className="container">
+        {renderedTitles}
         {audioPlayer}
       </div>
     );
-
-    return renderedTitles;
   };
 
   return (
