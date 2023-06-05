@@ -31,7 +31,7 @@ function Details({ item, artist, data }) {
           .map((nextItem) => nextItem.TitleText)
           .map((nextTitle, i) => (
             <li className="list-text" key={i}>
-              {nextTitle}
+              {"•" + nextTitle}
             </li>
           ))}
       </ul>

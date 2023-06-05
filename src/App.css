@@ -120,29 +120,6 @@ h1 {
   bottom: 0 !important;
 }
 
-#audio {
-  display: none;
-  /* Oculta el reproductor de audio nativo */
-}
-
-
-.fp-watermark {
-  display: none;
-}
-
-.section-content {
-  padding-left: 40px;
-  padding-right: 40px;
-
-}
-
-.fp-overflow {
-  height: 100vh !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-}
-
 ul {
   margin-left: 0px;
   padding-left: 0px;
@@ -154,14 +131,30 @@ ul {
 .list-text {
   font-size: 15px;
   color: #bca0dc;
-  opacity: 34%;
-
+  opacity: 0.34;
+  margin-bottom: 0;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .list-text::before {
   content: "•";
-  /* Unicode character for bullet point */
-  font-size: 2em;
-  /* Adjust the size as per your preference */
-
+  font-size: 30px;
+  vertical-align: middle;
 }
+
+
+.container{
+  padding: 0px !important;
+  margin: 0px  !important;
+}
+
+.open-details{
+ margin-top: 40px;
+ margin-bottom: 40px;
+ padding-left: 40px;
+  padding-right: 40px;
+}
+
+.header{padding-left: 40px;
+  padding-right: 40px;}

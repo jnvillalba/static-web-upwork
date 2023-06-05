@@ -17,6 +17,7 @@ const AudioPlayer = ({ url }) => {
   return (
     <div
       style={{
+        marginTop: '40px',
         width: '100%',
         height: '50px',
         backgroundColor: '#52307c',

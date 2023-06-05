@@ -3,7 +3,6 @@ import { useSwipeable } from "react-swipeable";
 import { useNavigate } from "react-router-dom";
 import area1 from "./const/area1";
 import artist1 from "./const/artist1";
-import Details from "./Components/Details";
 import AudioPlayer from "./Components/AudioPlayer";
 
 const SwipeableList = ({ item, artist, data }) => {
@@ -34,13 +33,17 @@ const SwipeableList = ({ item, artist, data }) => {
       if (i < currentIndex) {
         titleClasses = "list-text";
         renderedTitles.push(
-          <h2 className={titleClasses} key={i}>{area1[i].TitleText}</h2>
+          <h2 className={titleClasses} key={i}>
+            {area1[i].TitleText}
+          </h2>
         );
       } else if (i === currentIndex) {
         yearClasses += " show";
-        audioPlayer = area1[i].MediaIURL ? <AudioPlayer url={area1[i].MediaIURL} /> : null;
+        audioPlayer = area1[i].MediaIURL ? (
+          <AudioPlayer url={area1[i].MediaIURL} />
+        ) : null;
         renderedTitles.push(
-          <div key={i}>
+          <div className="open-details" key={i}>
             <h2 className={yearClasses}>{area1[i].Year}</h2>
             <h2 className={titleClasses}>{area1[i].TitleText}</h2>
             <p className="descriptionText">{area1[i].DescriptionText}</p>
@@ -49,7 +52,9 @@ const SwipeableList = ({ item, artist, data }) => {
       } else if (i > currentIndex) {
         titleClasses = "list-text";
         renderedTitles.push(
-          <h2 className={titleClasses} key={i}>{area1[i].TitleText}</h2>
+          <p className={titleClasses} key={i}>
+            {area1[i].TitleText}
+          </p>
         );
       }
     }
@@ -63,16 +68,18 @@ const SwipeableList = ({ item, artist, data }) => {
   };
 
   return (
-    <>
-      <button className="btn backBtn" onClick={goToHome}>
-        &lt;&lt;
-      </button>
-      <h1 className="name">{artist1.Name}</h1>
-      <h1 className="years">{artist1.Years}</h1>
+    <div className="section-content">
+      <div className="header">
+        <button className="btn backBtn" onClick={goToHome}>
+          &lt;&lt;
+        </button>
+        <h1 className="name">{artist1.Name}</h1>
+        <h1 className="years">{artist1.Years}</h1>
+      </div>
       <div {...swipeHandlers} style={{ touchAction: "pan-y" }}>
         {renderTitles()}
       </div>
-    </>
+    </div>
   );
 };
 
