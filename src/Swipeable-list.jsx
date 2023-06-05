@@ -11,9 +11,9 @@ const SwipeableList = ({ item, artist, data }) => {
   const navigate = useNavigate();
   const goToHome = () => navigate("/");
   const handleSwipe = (direction) => {
-    if (direction === "up") {
+    if (direction === "up" && currentIndex < area1.length - 1) {
       setCurrentIndex((prevIndex) => prevIndex + 1);
-    } else if (direction === "down") {
+    } else if (direction === "down" && currentIndex > 0) {
       setCurrentIndex((prevIndex) => prevIndex - 1);
     }
   };
