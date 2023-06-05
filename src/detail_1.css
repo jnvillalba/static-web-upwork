@@ -1,0 +1,61 @@
+.detail_1 {
+    color: #BCA0DC;
+    padding-left: 15px;
+    padding-right: 10px;
+
+}
+
+.cadet {
+    /* font-size: 48; */
+
+}
+
+.dbirth {
+    font-size: 18px;
+
+}
+
+.year {
+    width: fit-content;
+    margin-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #a57fc8;
+    border-radius: 20px;
+    font-family: 'hankengrotesk_reguler';
+
+}
+
+.description {}
+
+.about {
+    font-family: 'hankengrotesk_reguler';
+
+}
+
+.list {
+
+    opacity: 34%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: left;
+    align-items: left;
+    padding: 0;
+}
+
+.player2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}

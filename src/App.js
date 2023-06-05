@@ -25,6 +25,7 @@ import area1 from "./const/area1";
 import area2 from "./const/area2";
 import artist1 from "./const/artist1";
 import artist2 from "./const/artist2";
+import Swipeablelist from "./Swipeable-list";
 function App() {
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/1" element={<FullpageWrapper data={area1} artist={artist1} />} />
           <Route path="/2" element={<FullpageWrapper data={area2} artist={artist2} />} />
+          <Route path="/3" element={<Swipeablelist/>} />
           <Route exact path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
