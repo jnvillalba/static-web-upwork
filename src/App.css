@@ -10,20 +10,15 @@ body {
 
 }
 
-h1 {
-  font-size: 12px;
-  color: #bca0dc;
-}
-
 .name {
-  font-size: 24px;
+  font-size: 20px;
   color: #bca0dc;
   font-family: 'Hanken Grotesk', sans-serif;
   font-weight: bold;
 }
 
 .years {
-  font-size: 21px;
+  font-size: 20px;
   color: #bca0dc;
   margin-bottom: 25px;
 }
@@ -41,33 +36,28 @@ h1 {
   margin-bottom: 15px;
 }
 
-
 .border {
   border-radius: 30%;
   width: 100%;
 }
-
 .title {
 
-  font-size: 45px;
+  font-size: 42px;
   color: #bca0dc;
   font-family: "American Typewriter", "AmericanTypewriter";
 
 }
-
 .descriptionText {
-  font-size: 14px;
+  font-size: 12px;
   color: #bca0dc;
   font-family: 'Hanken Grotesk', sans-serif;
 }
-
 .backBtn {
   color: #bca0dc;
   opacity: 22%;
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 25px;
 }
-
 .backBtn {
   width: 40px;
   height: 40px;
@@ -77,39 +67,18 @@ h1 {
   font-size: 25px;
   cursor: pointer;
   outline: none;
-  /* Estilos para dar forma de "<<", puedes ajustarlos según tus preferencias */
   position: relative;
   padding-left: 0px;
   padding-right: 0px;
   margin-bottom:25px;
 }
-
-
-
 .area {
   height: 100%;
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-
-.details-container {
-  min-height: 100vh;
-  /* Cambia height a min-height */
-  width: 100%;
-  overflow-y: scroll;
-  position: relative;
-}
-
-
-.audio-player {
-  /* Ajusta el alto según tus necesidades */
-  position: absolute !important;
-  bottom: 0 !important;
 }
 
 ul {
@@ -121,7 +90,7 @@ ul {
 }
 
 .list-text {
-  font-size: 15px;
+  font-size: 12px;
   color: #bca0dc;
   opacity: 0.34;
   margin-bottom: 0;
@@ -131,7 +100,7 @@ ul {
 
 .list-text::before {
   content: "•";
-  font-size: 30px;
+  font-size: 28px;
   vertical-align: middle;
 }
 
