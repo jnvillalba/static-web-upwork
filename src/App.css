@@ -25,7 +25,7 @@ h1 {
 .years {
   font-size: 21px;
   color: #bca0dc;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .year {
@@ -38,7 +38,7 @@ h1 {
   padding-right: 30px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 
@@ -81,7 +81,7 @@ h1 {
   position: relative;
   padding-left: 0px;
   padding-right: 0px;
-  margin-bottom: 30px;
+  margin-bottom:25px;
 }
 
 
@@ -105,14 +105,6 @@ h1 {
   position: relative;
 }
 
-.item {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  /* Agrega un margen inferior */
-}
 
 .audio-player {
   /* Ajusta el alto según tus necesidades */
@@ -150,8 +142,8 @@ ul {
 }
 
 .open-details {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 35px;
+  margin-bottom: 15px;
   padding-left: 40px;
   padding-right: 40px;
 }
