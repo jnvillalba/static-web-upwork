@@ -41,18 +41,10 @@ h1 {
   margin-bottom: 20px;
 }
 
-
-.border {
-  border-radius: 30%;
-  width: 100%;
-}
-
 .title {
-
   font-size: 45px;
   color: #bca0dc;
   font-family: "American Typewriter", "AmericanTypewriter";
-
 }
 
 .descriptionText {
@@ -84,8 +76,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-
-
 .area {
   height: 100%;
   width: 100%;
@@ -95,27 +85,7 @@ h1 {
   justify-content: center;
   cursor: pointer;
 }
-
-
-.details-container {
-  min-height: 100vh;
-  /* Cambia height a min-height */
-  width: 100%;
-  overflow-y: scroll;
-  position: relative;
-}
-
-.item {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  /* Agrega un margen inferior */
-}
-
 .audio-player {
-  /* Ajusta el alto según tus necesidades */
   position: absolute !important;
   bottom: 0 !important;
 }
@@ -162,4 +132,15 @@ ul {
   content: "•";
   font-size: 28px;
   vertical-align: middle;
+}
+
+.section-content {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.active .section-content {
+  opacity: 1;
+  transform: translateY(0);
 }

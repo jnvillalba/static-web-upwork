@@ -1,14 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import AudioPlayer from "./AudioPlayer";
 import DetailsHeader from "./DetailsHeader";
-import { motion } from "framer-motion";
 function Details({ item, artist, data }) {
-  const textAnimationVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0 },
-  };
-
-  const textAnimationTransition = { duration: 1 };
+  
 
   return (
     <div className="section">
@@ -24,32 +19,9 @@ function Details({ item, artist, data }) {
               </li>
             ))}
         </ul>
-        <motion.h2
-          className="year"
-          initial="hidden"
-          animate="visible"
-          transition={{ ...textAnimationTransition, delay: 0.4 }}
-          variants={textAnimationVariants}
-        >
-          {" "}
-          {item.Year}
-        </motion.h2>
-        <motion.h2
-          className="title"
-          initial="hidden"
-          animate="visible"
-          transition={{ ...textAnimationTransition, delay: 0.5 }}
-          variants={textAnimationVariants}
-        >
-          {item.TitleText}
-        </motion.h2>
-        <motion.p className="descriptionText"
-        initial="hidden"
-              animate="visible"
-              transition={{ ...textAnimationTransition, delay: 1 }}
-              variants={textAnimationVariants}
-            >
-          {item.DescriptionText}</motion.p>
+        <h2 className="year">{item.Year}</h2>
+        <h2 className="title">{item.TitleText}</h2>
+        <p className="descriptionText">{item.DescriptionText}</p>
         <ul>
           {data
             .slice(item.Order, data.length)
