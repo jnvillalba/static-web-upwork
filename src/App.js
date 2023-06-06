@@ -1,21 +1,3 @@
-/*import "./App.css";
-
-function App() {
-  const fullpageOptions = {
-    anchors: ["page1", "page2", "page3"],
-  };
-  
-
-  return (
-    <FullpageWrapper {
-      ...fullpageOptions
-  }/>
-  );
-}
-
-export default App;
-*/
-
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";

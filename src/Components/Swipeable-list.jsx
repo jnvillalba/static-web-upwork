@@ -35,7 +35,6 @@ const SwipeableList = ({ artist, data }) => {
             title={item.TitleText}
             year={item.Year}
             description={item.DescriptionText}
-            mediaUrl={item.MediaIURL}
             key={index}
           />
         );
@@ -46,6 +45,7 @@ const SwipeableList = ({ artist, data }) => {
           </p>
         );
       }
+      return null;
     });
   };
 
