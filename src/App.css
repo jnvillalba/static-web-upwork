@@ -10,17 +10,22 @@ body {
 
 }
 
+h1 {
+  font-size: 12px;
+  color: #bca0dc;
+}
+
 .name {
-  font-size: 20px;
+  font-size: 24px;
   color: #bca0dc;
   font-family: 'Hanken Grotesk', sans-serif;
   font-weight: bold;
 }
 
 .years {
-  font-size: 20px;
+  font-size: 21px;
   color: #bca0dc;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .year {
@@ -33,31 +38,36 @@ body {
   padding-right: 30px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
+
 
 .border {
   border-radius: 30%;
   width: 100%;
 }
+
 .title {
 
-  font-size: 42px;
+  font-size: 45px;
   color: #bca0dc;
   font-family: "American Typewriter", "AmericanTypewriter";
 
 }
+
 .descriptionText {
-  font-size: 12px;
+  font-size: 14px;
   color: #bca0dc;
   font-family: 'Hanken Grotesk', sans-serif;
 }
+
 .backBtn {
   color: #bca0dc;
   opacity: 22%;
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 25px;
 }
+
 .backBtn {
   width: 40px;
   height: 40px;
@@ -67,18 +77,70 @@ body {
   font-size: 25px;
   cursor: pointer;
   outline: none;
+  /* Estilos para dar forma de "<<", puedes ajustarlos según tus preferencias */
   position: relative;
   padding-left: 0px;
   padding-right: 0px;
-  margin-bottom:25px;
+  margin-bottom: 30px;
 }
+
+
+
 .area {
   height: 100%;
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+
+.details-container {
+  min-height: 100vh;
+  /* Cambia height a min-height */
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.item {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  /* Agrega un margen inferior */
+}
+
+.audio-player {
+  /* Ajusta el alto según tus necesidades */
+  position: absolute !important;
+  bottom: 0 !important;
+}
+
+#audio {
+  display: none;
+  /* Oculta el reproductor de audio nativo */
+}
+
+
+.fp-watermark {
+  display: none;
+}
+
+.section-content {
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+.fp-overflow {
+  height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
 }
 
 ul {
@@ -90,34 +152,14 @@ ul {
 }
 
 .list-text {
-  font-size: 12px;
+  font-size: 15px;
   color: #bca0dc;
-  opacity: 0.34;
-  margin-bottom: 0;
-  padding-left: 40px;
-  padding-right: 40px;
+  opacity: 34%;
+
 }
 
 .list-text::before {
   content: "•";
   font-size: 28px;
   vertical-align: middle;
-}
-
-
-.container {
-  padding: 0px !important;
-  margin: 0px !important;
-}
-
-.open-details {
-  margin-top: 35px;
-  margin-bottom: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.header {
-  padding-left: 40px;
-  padding-right: 40px;
 }
