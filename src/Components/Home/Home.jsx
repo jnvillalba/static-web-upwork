@@ -11,20 +11,16 @@ const Home = () => {
     backgroundImage: `url(${homescreenImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
     height: "100vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
   };
 
   return (
-    <div style={containerStyle}>
-      <div className="area" onClick={goTo1}>
-        
-      </div>
-      <div className="area" onClick={goTo2}>
-        
-      </div>
+    <div style={containerStyle} className="layout">
+      <div></div>
+      <div></div>
+      <div className="area" onClick={goTo1}></div>
+      <div className="area" onClick={goTo2}></div>
     </div>
   );
 };

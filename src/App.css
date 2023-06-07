@@ -7,7 +7,6 @@ body {
   /* background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95));*/
   background: #3C1361;
   font-family: "American Typewriter", "AmericanTypewriter";
-
 }
 
 h1 {
@@ -25,7 +24,7 @@ h1 {
 .years {
   font-size: 21px;
   color: #bca0dc;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .year {
@@ -39,6 +38,7 @@ h1 {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .title {
@@ -79,11 +79,14 @@ h1 {
 .area {
   height: 100%;
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.area:hover{
+  background-color: black;
+  opacity: 0.3;
 }
 .audio-player {
   position: absolute !important;
@@ -92,18 +95,15 @@ h1 {
 
 #audio {
   display: none;
-  /* Oculta el reproductor de audio nativo */
 }
-
 
 .fp-watermark {
   display: none;
 }
 
 .section-content {
-  padding-left: 40px;
-  padding-right: 40px;
-
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .fp-overflow {
@@ -136,11 +136,20 @@ ul {
 
 .section-content {
   opacity: 0;
-  transform: translateY(100%);
+  transform: scaleY(0);
+  transform-origin: bottom;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .section.active .section-content {
   opacity: 1;
-  transform: translateY(0);
+  transform: scaleY(1);
+}
+
+
+.layout {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
 }
